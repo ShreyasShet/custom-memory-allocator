@@ -27,9 +27,10 @@ Current implementation includes:
 - [x] Internal fragmentation reduction
 - [x] External fragmentation reduction
 
-Planned Features:
-□ Alignment support
-□ Explicit free list
-□ Segregated free lists
-□ mmap-backed heap
-□ Allocator statistics
+## Planned Features
+
+- [ ] Alignment support
+- [ ] Explicit free list
+- [ ] Segregated free lists
+- [ ] mmap-backed heap
+- [ ] Allocator statistics
