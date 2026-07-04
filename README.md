@@ -1,6 +1,6 @@
 # custom-memory-allocator
 
-Project Overview:
+## Project Overview:
 Custom memory allocator written in C to explore
 memory management techniques used by malloc.
 
@@ -17,14 +17,15 @@ Current implementation includes:
 +--------+-----------+--------+
 ```
 
-Implemented Features:
-✔ First-fit allocation
-✔ Block splitting
-✔ Boundary tags
-✔ Forward coalescing
-✔ Backward coalescing
-✔ Internal fragmentation reduction
-✔ External fragmentation reduction
+## Implemented Features
+
+- [x] First-fit allocation
+- [x] Block splitting
+- [x] Boundary tags
+- [x] Forward coalescing
+- [x] Backward coalescing
+- [x] Internal fragmentation reduction
+- [x] External fragmentation reduction
 
 Planned Features:
 □ Alignment support
