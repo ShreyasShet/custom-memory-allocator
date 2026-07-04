@@ -11,6 +11,7 @@ Current implementation includes:
 - Bidirectional coalescing
 - Reuse of freed blocks
 
+## Memory Layout
 ```
 +--------+-----------+--------+
 | Header | Payload   | Footer |
