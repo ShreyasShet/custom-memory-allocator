@@ -11,9 +11,11 @@ Current implementation includes:
 - Bidirectional coalescing
 - Reuse of freed blocks
 
+```
 +--------+-----------+--------+
 | Header | Payload   | Footer |
 +--------+-----------+--------+
+```
 
 Implemented Features:
 ✔ First-fit allocation
