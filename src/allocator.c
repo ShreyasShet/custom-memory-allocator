@@ -6,7 +6,6 @@ static char heap[HEAP_SIZE];
 static size_t current = 0;
 
 void* my_malloc(size_t size){
-    //size = ALIGN(size);
     size_t total = sizeof(Header) + size + sizeof(Footer);
     size_t pos = 0;
     Header* h = (Header*)&heap[pos];
