@@ -1,10 +1,13 @@
-#include "allocator.h"
-void* a = my_malloc(128);
+#include "../include/allocator.h"
 
-my_free(a);
+int main(){
+    void* a = my_malloc(128);
 
-my_malloc(16);
-my_malloc(16);
-my_malloc(16);
+    my_free(a);
 
-print_blocks();
+    my_malloc(16);
+    my_malloc(16);
+    my_malloc(16);
+
+    print_block();
+}

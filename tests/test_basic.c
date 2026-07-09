@@ -1,7 +1,9 @@
-#include "allocator.h"
+#include "../include/allocator.h"
 
-void* a = my_malloc(32);
-my_free(a);
-void* b = my_malloc(16);
+int main(){
+    void* a = my_malloc(32);
+    my_free(a);
+    void* b = my_malloc(16);
 
-print_block();
+    print_block();
+}

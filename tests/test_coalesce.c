@@ -1,11 +1,13 @@
-#include "allocator.h"
+#include "../include/allocator.h"
 
-void* a = my_malloc(64);
-void* b = my_malloc(64);
-void* c = my_malloc(64);
+int main(){
+    void* a = my_malloc(64);
+    void* b = my_malloc(64);
+    void* c = my_malloc(64);
 
-my_free(b);
-my_free(c);
-my_free(a);
+    my_free(b);
+    my_free(c);
+    my_free(a);
 
-print_block();
+    print_block();
+}
