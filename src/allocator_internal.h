@@ -7,9 +7,8 @@
 #define MIN_BLOCK_SIZE 8
 
 typedef struct header{
-    size_t size;
-    int free;
-}Header;
+    size_t size_and_flags;
+} Header;
 
 typedef struct footer{
     size_t size;
