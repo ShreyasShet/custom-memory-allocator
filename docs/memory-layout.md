@@ -23,12 +23,16 @@ Bit Layout for storing size and flags:
 |    Payload Size     |0 |0 |0 |A |
 +--+---------------+--+--+--+--+--+
 ```
-Bits 4 - 63 store payload size
-Bits 1 - 3 reserved for future use
-Bit 0 used as a allocation flag
+Bits 4 - 63: store payload size
+
+Bits 1 - 3: reserved for future use
+
+Bit 0: used as a allocation flag
 
 eg: my_malloc(48)
+
 Header Stores:
+
 h->size_and_flags = 48 | 1
 
 Footer stores:
