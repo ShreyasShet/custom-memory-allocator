@@ -12,8 +12,7 @@ Header stores:
 
 ```c
 typedef struct header {
-    size_t size;
-    int free;
+    size_t size_and_flags;
 } Header;
 ```
 
@@ -31,6 +30,6 @@ Example block:
 
 ```text
 +------------------+------------------+------------------+
-| size=64 free=0   | 64-byte payload  | size=64          |
+| size=64 | 1      | 64-byte payload  | size=64          |
 +------------------+------------------+------------------+
 ```
