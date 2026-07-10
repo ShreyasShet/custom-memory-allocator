@@ -4,7 +4,7 @@
 #include <stddef.h>
 
 #define HEAP_SIZE 1024
-#define MIN_BLOCK_SIZE 8
+#define MIN_PAYLOAD_SIZE 16
 
 typedef struct header{
     size_t size_and_flags;
@@ -13,5 +13,7 @@ typedef struct header{
 typedef struct footer{
     size_t size;
 } Footer;
+
+extern char heap[HEAP_SIZE];
 
 #endif

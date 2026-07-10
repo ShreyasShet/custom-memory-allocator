@@ -1,4 +1,8 @@
+#ifndef HELPER_H
+#define HELPER_H
+
 #include "../src/allocator_internal.h"
+#include <stddef.h>
 
 #define ALIGNMENT 16
 #define ALIGN(size) ((size + (ALIGNMENT - 1)) & ~(ALIGNMENT - 1))
@@ -24,3 +28,5 @@ static inline void mark_free(Header* h){
 static inline void mark_allocated(Header* h){
     h->size_and_flags |= 1;
 }
+
+#endif
