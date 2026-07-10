@@ -4,12 +4,23 @@
 Custom memory allocator written in C to explore
 memory management techniques used by malloc.
 
-## Memory Layout
+## Block Layout
 ```
 +--------+-----------+--------+
 | Header | Payload   | Footer |
 +--------+-----------+--------+
 ```
+
+## Allocation Overview
+```
++--------+--------+--------+--------+-----------+--------+--------+--------+
+|Padding |  Prologue Block | Header | Payload   | Footer |........|Epilogue|
++--------+--------+--------+--------+-----------+--------+--------+--------+
+                           ^                                      ^
+                        heap_start                             heap_end
+```
+- Padding implies skipping 8B of heap to keep the payload aligned
+- Prologue Block(header + footer) and Epilogue(Header) are always allocated when heap is initialized and act as boundaries for allocation
 
 ## Implemented Features
 
@@ -20,10 +31,10 @@ memory management techniques used by malloc.
 - [x] Backward coalescing
 - [x] Internal fragmentation reduction
 - [x] External fragmentation reduction
+- [x] Alignment Support 
 
 ## Planned Features
 
-- [ ] Alignment support
 - [ ] Explicit free list
 - [ ] Segregated free lists
 - [ ] mmap-backed heap
