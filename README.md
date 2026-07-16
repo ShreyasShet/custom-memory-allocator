@@ -31,11 +31,11 @@ memory management techniques used by malloc.
 - [x] Backward coalescing
 - [x] Internal fragmentation reduction
 - [x] External fragmentation reduction
-- [x] Alignment Support 
+- [x] Alignment Support
+- [x] Explicit free list
 
 ## Planned Features
 
-- [ ] Explicit free list
 - [ ] Segregated free lists
 - [ ] mmap-backed heap
 - [ ] Allocator statistics
