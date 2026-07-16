@@ -7,6 +7,6 @@ void* my_malloc(size_t size);
 void my_free(void* ptr);
 
 /*Debug Utitlity*/
-void print_block();
-
+void heap_check();
+void print_list();
 #endif
