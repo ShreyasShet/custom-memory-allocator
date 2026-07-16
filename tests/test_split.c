@@ -9,5 +9,5 @@ int main(){
     my_malloc(16);
     my_malloc(16);
 
-    print_block();
+    heap_check();
 }
