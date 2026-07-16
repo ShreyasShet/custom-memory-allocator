@@ -1,6 +1,7 @@
 #include "../src/allocator_internal.h"
 #include "../include/helper.h"
 #include "../src/heap.h"
+#include "../include/free_list.h"
 
 void* heap_init(){
     char* base = heap;
