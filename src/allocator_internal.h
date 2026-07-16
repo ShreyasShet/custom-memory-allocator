@@ -14,6 +14,10 @@ typedef struct footer{
     size_t size;
 } Footer;
 
-extern char heap[HEAP_SIZE];
+typedef struct freenode{
+    struct freenode* prev;
+    struct freenode* next;
+} Node;
 
+extern char heap[HEAP_SIZE];
 #endif
