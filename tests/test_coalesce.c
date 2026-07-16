@@ -8,6 +8,5 @@ int main(){
     my_free(b);
     my_free(c);
     my_free(a);
-
-    print_block();
+    heap_check();
 }
