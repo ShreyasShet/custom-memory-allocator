@@ -29,4 +29,7 @@ static inline void mark_allocated(Header* h){
     h->size_and_flags |= 1;
 }
 
+static Header* get_header(Node* t){
+    return (Header*)((char*)t - sizeof(Header));
+}
 #endif
